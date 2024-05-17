@@ -109,3 +109,47 @@ console.log(cars.toSpliced(0, 2)); // This new form no alterate the exist array.
 // The slice() method
 const romanNumbers = ["I", "II", "III", "VI", "V", "VI", "VII", "VIII"];
 console.log(romanNumbers.slice(3, 7));
+
+// Array search
+
+/**
+ * There are 7 methods that allow us to search elements into an array:
+ * 1- indexOf()
+ * 2- lastIndexOf()
+ * 3- includes()
+ * 4- find()
+ * 5- findIndex()
+ * 6- findLast()
+ * 7- findLastIndex()
+ */
+
+const myExes = ["America", "Yalinka", "Karol", "Sandra", "Karol"];
+
+// The indexOf() method searches an array for an element value and returns its position.
+console.log(myExes.indexOf("Karol", 2));
+
+// The lastIndexOf() is the same that indexOf, the only diference is that returns the last occurrence of the specified element.
+console.log(myExes.lastIndexOf("Karol"));
+
+// The includes() method allows us to check if an element exist into an array.
+console.log(myExes.includes("Carolina"));
+
+const myNumbers = [8, 4, 6, 10, 16]
+
+// The find() method returns the value of the first array element that passes a test function.
+console.log(myNumbers.find(function(value, index, array) {
+    return value >= 0;
+}));
+
+// The findIndex() method returns the index of the first array element that passes a test function.
+console.log(myNumbers.findIndex(function(value, index, array) {
+    return value == 10;
+}));
+
+console.log(myNumbers.findLast(function(value, index, array) {
+    return value > 5;
+}));
+
+console.log(myNumbers.findLastIndex(function(value, index, array) {
+    return value > 11;
+}));
