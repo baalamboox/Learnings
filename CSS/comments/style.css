@@ -1,0 +1,41 @@
+/* Esto es un comentario en CSS */
+
+/* Mediante el selector general se puede afectar a todo elemento HTML */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    * Con el selector body, puedo dar estilos a todos los elementos que pueda
+    * contener, en este caso, alinear de forma horizontal y vertical los
+    * elementos que se contiene.
+*/
+body {
+    align-items: center;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    height: 100vh; /* Aquí se define el alto de acuerdo al view port del dispositivo */
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    font-family: monospace;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    /* text-align: center; Invalida esta propiedad de CSS */
+    width: 100%;
+}
+
+p {
+    color: greenyellow;
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+    width: 500px;
+}
