@@ -1,0 +1,7 @@
+/* Componentes de una regla en CSS. */
+/*  selector { propiedad: valor; }  */
+h1 {
+    color: red;
+    font-size: calc(100vh - 50px);
+    text-transform: uppercase;
+}
