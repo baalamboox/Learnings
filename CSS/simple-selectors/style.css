@@ -1,0 +1,84 @@
+/* Selector universal */
+/* El selector universal permite efectuar estilos a todo elementos visible dentro del documento */
+* {
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    background-color: black;
+}
+
+/* Selector por nombre de elemento */
+
+/* Mediante este selector se estan afectando todos los elementos que se llamen h1 */
+h1 {
+    text-align: right;
+    font-family: monospace;
+}
+
+/* Esta afectando a todos los elementos llamados p */
+p {
+    text-align: justify;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+/* Afecta a todos los elementos llamados button */
+button {
+    border: 0;
+}
+
+/* Selector por atributo class, nombre de clase */
+/* Se puede aplicar muchas clases de estilos a los elementos */
+.divider {
+    color: green;
+}
+
+.text {
+    color: palevioletred;
+}
+
+/* Selector por ID */
+/* Solo se puede aplicar una sola regla a cada elemento */
+#paragraph-1 {
+    font-weight: bold;
+    color: orangered;
+    font-size: 24px;
+}
+
+#paragraph-2 {
+    font-weight: bold;
+    color: blue;
+    font-size: 24px;
+}
+
+/* Selectores por agrupación de nombre de elemento, estan separados por una coma */
+h1, h2 {
+    text-decoration: underline;
+}
+
+/* Selector por agrupación de clases */
+.divider, .text {
+    background-color: azure;
+}
+
+/* Selector por agrupación de ID's */
+#paragraph-1, #paragraph-2 {
+    line-height: 50px;
+}
+
+/* Selector po agrupación de nombres elementos, clases, y ID's */
+
+h1, h2, .divider, .text, #paragraph-1, #paragraph-2 {
+    text-transform: lowercase;
+}
+
+/* Selector por nombre de elementos pero que contenga una clase(s) */
+p.text {
+    font-style: italic;
+}
+
+span.text {
+    background-color: black;
+}
