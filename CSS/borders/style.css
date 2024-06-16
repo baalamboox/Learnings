@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border-width: 10px;
+    border-color: blue;
+    border-style: outset;
+    border-radius: 10px;
+    height: 250px;
+    width: 500px;
+
+}
+
+.container-1 {
+    background-color: black;
+    border-color: red yellow blue violet; /* Manera corta de defir en los 4 bordes colores */
+    border-width: 4px 2px 1px 5px; /* Manera corta de definir el ancho del borde en los 4 lados */
+    border-style: solid double dashed dotted; /* Manera corta de definir los estilos en los 4 bordes */
+    border-radius: 10px 5px 2px 1px; /* Manera corta de definir las 4 esquina redondeadas. */
+    border-top: 4px solid red;
+    border-right: 3px dotted blue;
+    border-bottom: 2px solid yellow;
+    border-left: 1px solid orange;
+    border-left: 4px solid red;
+    border-top-left-radius: 10px;
+    border-end-start-radius: 10px;
+    height: 100px;
+    width: 500px;
+}
