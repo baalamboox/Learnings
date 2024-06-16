@@ -1,0 +1,35 @@
+/* El modelo caja se aplica para todos los elementos visibles de HTML */
+/* 
+    * El modelo caja tiene su siguiente estructura:
+    * 1. Contenido (Content).
+    * 2. Relleno (Padding).
+    * 3. Borde (Border).
+    * 4. Line esterior (Outline).
+    * 5. Margen (Margin).
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Se usa border box para empezar a contar tanto borde como padding de afuer hacia adentro. */
+    box-sizing: content-box; /* Empieza a incrementar el tamaño de los padding y los borders */
+    border: 0;
+}
+
+/*
+    * En resumen la propiedad box-sizing esta muy relacionado
+    * con las propiedades width y height, con border-box respeta estas propiedades,
+    * mientras con content-box no lo hace, va a incrementar el width y height de acuerdo
+    * al tamaño del padding y border.
+*/
+
+button {
+    margin: 5px;
+    border: solid 5px red;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 50px;
+    /* outline: solid 100px; */
+}
