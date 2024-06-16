@@ -1,0 +1,55 @@
+/* Las propiedades width and height sirve para definir el tamaño de anchura y altura de los elementos. */
+/* Esta muy relacionada con la propiedad box-sizing. */
+/* Se puede usar cualquier tipo de medida, aunque esta va a depender de las necesidades. */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container-1 {
+    height: 300px; /* Definir en 300px al alto del elemento */
+    width: 300px; /* Definir en 300px el ancho del elemento */
+    background-color: red;
+}
+
+.container-2 {
+    background-color: blue;
+    height: 250px;
+    width: 500px;
+}
+
+.subcontainer-1 {
+    background-color: black;
+    height: inherit; /* Hereda el alto de su contenedor padre */
+    width: inherit; /* Hereda el ancho del contenedor padre */
+}
+
+.container-3 {
+    background-color: brown;
+    height: 250px;
+    width: 100%;
+}
+
+.subcontainer-2 {
+    background-color: blueviolet;
+    height: 1500px;
+    max-width: 500px; /* La propiedad max-width define el ancho maximo que el elemento tendrá, si tiene un width menor a este se aplicara. */
+    max-height: 100%; /* La propiedad max-height define el alto maximo que el elemento tendrá.  */
+    width: 234234px;
+}
+
+.container-4 {
+    background-color: aqua;
+    height: 500px;
+    width: 100%;
+}
+
+.subcontainer-3 {
+    background-color: black;
+    height: 1px;
+    min-height: 40px; /* Define el alto minimo del elemento, si el elemento mide mas se adapta a dicha medida */
+    min-width: 40px; /* Define el ancho minimo del elemento */
+    width: 1px;
+}
