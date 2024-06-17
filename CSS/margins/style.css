@@ -1,0 +1,20 @@
+/* El margin o margen se encuentra por fuera del border del elemento, es un espacio */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: black;
+    color: red;
+    /* margin: 10px 50px; */ /* Aplica un margen de 10px arriba y abajo y 50px en los laterales */
+    /* margin: 50px 100px 60px 10px; */
+    /* margin: top right bottom left; */
+    margin-top: 100px; /* Aplica un margen en la parte superior del elemento */
+    margin-right: 60px /* Aplica un margen en la parte lateral derecha del elemento */;
+    margin-bottom: 600px; /* Aplica un margen en la parte inferior del elemento */
+    margin-left: 500px; /* Aplica un margen en la parte lateral izquierda del elemento */
+    padding: 50px 100px;
+}
