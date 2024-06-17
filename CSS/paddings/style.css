@@ -1,0 +1,21 @@
+/* El padding o relleno es aquella parte entre el contenido y el borde. */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    background-color: red;
+    border: 4px dotted black;
+    /* padding: 50px; */ /* Aplica un espciado entre el contenido y el borde de 50px de los cuatro lados (Arriba, derecha, abajo e izquierda) */
+    /* padding: 50px 100px; */ /* Aplica un espaciado de 50px arriba y abajo y 100px de izquierda a derecha */
+    padding: 20px 40px 20px 40px; /* Esta es la forma corta de definir rellenos en la parte superior, inferior, izquierda y deracha */
+    /* pdding: top right bottom left; */
+    padding-top: 50px; /* Solo aplica relleno en la parte de arriba */
+    padding-bottom: 100px; /* Solo aplica relleno en la parte inferior */
+    padding-left: 500px; /* Solo aplica relleno en la parte izquierda */
+    padding-right: 60px; /* Solo aplica relleno en la parte derecha */
+    
+}
