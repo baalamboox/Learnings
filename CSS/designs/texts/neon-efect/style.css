@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+.neon-wrapper {
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.neon-text {
+    text-align: center;
+    color: white;
+    letter-spacing: 10px;
+    font-weight: bolder;
+    font-size: 100px;
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    transform: inherit;
+    animation-name: neon-efect;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes neon-efect {
+    0% {
+        text-shadow: 0px 0px 10px pink;
+        color: pink;
+        letter-spacing: 10px;
+    }
+    25% {
+        text-shadow: 0px 0px 10px red;
+        color: red;
+        letter-spacing: 15px;
+    }
+    50% {
+        text-shadow: 0px 0px 10px blue;
+        color: blue;
+        letter-spacing: 20px;
+    }
+    75% {
+        text-shadow: 0px 0px 10px pink;
+        color: pink;
+        letter-spacing: 25px;
+    }
+    100% {
+        text-shadow: 0px 0px 10px red;
+        color: red;
+        letter-spacing: 30px;
+    }
+}

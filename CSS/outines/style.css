@@ -1,0 +1,33 @@
+
+/* 
+    * El OUTLINE es una parte de los elementos en HTML que se dibuja después del
+    * borde, tiene diferentes propiedades y diferentes valores, no afecta el tamaño del elemento
+    * y si hay otro elemento siguiente no altera su posición solo el OUTLINE se sobrepone.
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 500px;
+    height: 250px;
+    border: 1px solid black;
+    position: relative;
+    margin: 50px;
+    background-color: orangered;
+    outline-width: 10px;
+    outline-style: solid;
+    outline-color: red;
+    outline-offset: 10px;
+}
+
+.container h1 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

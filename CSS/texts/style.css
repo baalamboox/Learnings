@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+/* Formas de definir el color de los textos */
+h6 {
+    color: darkred; /* Define color de texto con nombre de color preestablecido por CSS */
+    color: #505; /* Define el color del texto en código hexadecimal */
+    color: rgb(255, 255, 255); /* DEfine el color del texto en rgb */
+    color: hsl(275, 80%, 27%); /* Define el color del texto con hsl */
+}
+
+/* Formas para poder alinear textos */
+
+p {
+    width: 500px;
+    height: 250px;
+    border: 1px solid;
+    margin: 10px;
+    padding: 20px;
+    text-align: justify; /* Permite alinear el texto de forma horizontal ya sea a la izquierda, derecha, centrado o justificado */
+    text-align-last: justify; /* Permite alinear de forma horizontal sólo la última línea de texto */
+
+    /* Estas dos propiedades cambia la dirección de texto */
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+p span {
+    font-size: 10px;
+    font-weight: bolder;
+    color: royalblue;
+    vertical-align: bottom; /* Alinea el texto de manera vertical */
+}
+
+/* Formas de poder decorar textos */
+p.paragraph {
+    direction: ltr;
+    unicode-bidi: bidi-override;
+    text-decoration-line: underline; /* Define el tipo de linea de decoración, ya sea subrayado, tachado, suprayado */
+    text-decoration-color: orangered; /* Define el color de la decoración del texto */
+    text-decoration-style: wavy;  /* Define el estilo de la línea de decoración del texto */
+    text-decoration-thickness: 2px;  /* Define el espesor de la línea de decoración del texto */
+
+    /* Se puede usar text-decoration de formar acortada */
+    text-decoration: line-through red dotted 2px;
+}
+
+/* Formas de transformar textos */
+p.paragraph {
+    text-transform: capitalize; /* Pone en mayúsculas las letras de la primera palabra */
+    text-transform: lowercase; /* Pone en minúsculas todo el texto */
+    text-transform: uppercase; /* Ponene todo el texto en mayúsculas */
+}
+
+/* Formas de agregar espaciados en los textos */
+p.paragraph {
+    text-indent: 100px; /* Identa la primer línea de un texto */
+    letter-spacing: 10px; /* Define el espaciado entre letras de un texto */
+    line-height: 20px; /* Define el alto entre la línea de un texto */
+    word-spacing: 100px; /* Define el tamaño del espacio entre palabras de un texto */
+    white-space: nowrap; /* Define si el texto se ajustará al contenedor mediante sus espacios en blanco */
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+    margin: 100px 0 100px 0;
+    letter-spacing: 20px;
+    text-shadow: 0px 0px 20px pink, 10px 5px 20px palevioletred, 15px 10px 30px red;
+    color: white;
+}
