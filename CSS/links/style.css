@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.button-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    text-decoration-line: underline;
+    text-decoration-color: green;
+    text-decoration-thickness: 2px;
+    text-decoration-style: wavy;
+    color: green;
+    text-align: center;
+}
+
+.button-2 {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-25%, -25%);
+    text-decoration-line: none;
+    background-color: red;
+    text-align: center;
+    align-content: center;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.button-2:hover {
+    background-color: blue;
+    letter-spacing: 0px;
+    transform: translate(10px, 10px);
+}
+
+/* Pseudoclase para cambiar el estado del elemento cuando se ha visitado el enlace */
+.button-2:visited {
+    background-color: green;
+    color: black;
+    font-weight: 900;
+}
+
+/* Pseudoclase para cambiar el estado del elementos cuando esta por defecto */
+.button-2:link {
+    background-color: pink;
+}
+
+/* Pseudoclase   */
+.button-2:active {
+    background-color: aqua;
+}
